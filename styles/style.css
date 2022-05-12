@@ -9,7 +9,7 @@
 
 }
 .menubtn {
-  background-color: #04AA6D;
+  background-color: #3399ff;
   color: white;
   padding: 16px;
   font-size: 16px;
@@ -49,9 +49,15 @@ img {
     height: 170px;
     width: 170px;
     object-fit: cover;
-    border-radius: 100%;
+    
 
     
+}
+
+
+.menu-img{
+  size:10%;
+  border-radius:100%;
 }
 
 
