@@ -54,18 +54,12 @@
   display: flex;
   background-color: transparent;
   margin: 5%;
-  background-color:black;
+  /* background-color:black; */
 
   
 }
 
-pre{
-  background-color: white;
-  font-family: cursive;
-  width: 80%;
-  font-size: 20px;
-  
-}
+
 /* .flex-bar > div{
   flex:80%;
   background-color: #ffffff;
@@ -79,6 +73,12 @@ img{
     object-fit: cover;    
 }
 
+pre{
+  background-color: white;
+  font-family: cursive;
+  width: 80%;
+  font-size: 20px;
+}
 
 .menu-img{
   height: 50%;
@@ -122,17 +122,20 @@ p.big{
   font-size: 150%;
 }
 
-b.small{
+p.small{
   background-color:white;
   color:transparent; 
 
 }
-div.big{
+/* div.big{
   background-color:#3399ff; 
-  flex:80%;
+  flex:50;
   
 }
-div.small{
+/* div.small{
   background-color: white; 
-  flex:10%;
+  /* flex:5%; */
+
+p{
+  font-weight: bold;
 }
