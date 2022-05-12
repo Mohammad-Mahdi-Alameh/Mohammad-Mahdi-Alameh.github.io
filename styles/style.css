@@ -45,7 +45,7 @@
 img {
     height: 170px;
     width: 170px;
-    object-fit: cover;
+    
     
 
     
@@ -53,8 +53,9 @@ img {
 
 
 .menu-img{
-  size:5%;
+  
   border-radius:100%;
+  object-fit: cover;
 }
 
 
