@@ -1,6 +1,15 @@
+.main-flex{
+  display: flex;
+  flex-direction: column;
+}
+.all-languages-flex{
+  display: flex;
+  flex-direction: column;
+}
 .menu-flex-container{
   display: flex;
   justify-content:flex-end;
+  margin:1%;
   
 }
 
@@ -11,19 +20,20 @@
   padding: 16px;
   font-size: 16px;
   border: none;
+  
 }
 
 .dropdown {
   position: relative;
   display: inline-block;
-  border-radius:30%
+  
 }
 
 .dropdown-content {
-  display: none;
+  display:none ;
   position: absolute;
   background-color: #f1f1f1;
-  min-width: 160px;
+  width: 200px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
@@ -39,12 +49,25 @@
 
 .dropdown:hover .dropdown-content {display: block;}
 
-.dropdown:hover .dropbtn {background-color: #3e8e41;}
 
 .flex-progress-bar{
   display: flex;
-  background-color: #3399ff;
-  /* margin: 5%; */
+  background-color: transparent;
+  margin: 5%;
+  background-color:black;
+
+  
+}
+/* .div-motivation{
+  background-color: white;
+  width: 80%;
+  size: 90%;
+} */
+pre{
+  background-color: white;
+  font-family: cursive;
+  width: 80%;
+  font-size: 20px;
   
 }
 /* .flex-bar > div{
@@ -53,7 +76,7 @@
   
 } */
 
-img {
+img{
     height: 170px;
     width: 170px;
     border-radius:90%;
@@ -62,13 +85,21 @@ img {
 
 
 .menu-img{
-  
+  height: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
   border-radius:100%;
   object-fit: cover;
 }
+.language-name{
+  background-color:transparent;
+  flex:10%;
+}
 
 
-ul {
+ul{
     background: #3399ff;
     padding: 20px;
     list-style-type: none;
@@ -76,7 +107,7 @@ ul {
     width: 40%;
     
 }
-h1 {
+h1{
     padding: 60px;
     text-align: center;
     background: #3399ff;
@@ -84,7 +115,28 @@ h1 {
     font-size: 30px;
     width: 40%;
   }
-body {
-      background-color: rgb(245, 243, 243);
+body{
+      background-color:rgb(231, 231, 231);
     }
 
+p.big{
+  background-color:#3399ff;
+  color:white; 
+  text-align: center; 
+  font-size: 150%;
+}
+
+b.small{
+  background-color:white;
+  color:transparent; 
+
+}
+div.big{
+  background-color:#3399ff; 
+  flex:80%;
+  
+}
+div.small{
+  background-color: white; 
+  flex:10%;
+}
