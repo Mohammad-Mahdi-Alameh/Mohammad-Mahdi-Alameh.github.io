@@ -11,7 +11,6 @@
 .menu-flex-container{
   display: flex;
   justify-content:flex-end;
-  margin:1%;
 }
 
 @media (max-width: 800px) {
