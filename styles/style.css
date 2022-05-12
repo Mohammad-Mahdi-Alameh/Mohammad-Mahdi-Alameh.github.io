@@ -3,6 +3,8 @@ img {
     width: 170px;
     object-fit: cover;
     border-radius: 100%;
+
+    
 }
 
 
@@ -10,6 +12,9 @@ ul {
     background: #3399ff;
     padding: 20px;
     list-style-type: none;
+    border-style: none;
+    width: 40%;
+    
 }
 h1 {
     padding: 60px;
@@ -17,4 +22,8 @@ h1 {
     background: #3399ff;
     color: white;
     font-size: 30px;
+    width: 40%;
   }
+body {
+      background-color: rgb(245, 243, 243);
+    }
