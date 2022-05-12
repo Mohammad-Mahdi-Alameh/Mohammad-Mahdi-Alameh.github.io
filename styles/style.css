@@ -16,6 +16,7 @@
 .dropdown {
   position: relative;
   display: inline-block;
+  border-radius:30%
 }
 
 .dropdown-content {
@@ -40,15 +41,22 @@
 
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
 
-
+.flex-progress-bar{
+  display: flex;
+  background-color: #3399ff;
+  
+}
+/* .flex-bar > div{
+  flex:80%;
+  background-color: #ffffff;
+  
+} */
 
 img {
     height: 170px;
     width: 170px;
-    
-    
-
-    
+    border-radius:100%;
+    object-fit: cover;    
 }
 
 
