@@ -258,7 +258,7 @@
   .hero h1 {
     font-family: "Sora", sans-serif;
     font-weight: 800;
-    font-size: clamp(2.6rem, 7vw, 5rem);
+    font-size: clamp(2.4rem, 6.4vw, 4.5rem);
     line-height: .98;
     letter-spacing: -.03em;
     margin-bottom: 20px;
@@ -360,6 +360,11 @@
   .code .f { color: #c3a6ff; }
   .code .c { color: var(--txt-faint); }
   .code .n { color: #ffd479; }
+  /* Darker code syntax colors for readable light theme */
+  html[data-theme="light"] .code .k { color: #b3138b; }
+  html[data-theme="light"] .code .s { color: #0a7ea4; }
+  html[data-theme="light"] .code .f { color: #6d3bd1; }
+  html[data-theme="light"] .code .n { color: #b06a00; }
 
   /* ============================================================
      STATS
@@ -601,7 +606,7 @@
 <!-- NAV -->
 <header class="nav" id="nav">
   <div class="wrap nav-inner">
-    <a href="#top" class="logo"><span class="dot"></span>MMA<span style="color:var(--brand)">.</span></a>
+    <a href="#top" class="logo"><span class="dot"></span>MMA<span style="color:var(--brand)"></span></a>
     <nav class="links" id="navlinks">
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
@@ -620,16 +625,15 @@
 <section class="hero" id="top">
   <div class="wrap hero-grid">
     <div>
-      <span class="badge-avail reveal"><span class="live"></span> Open to new opportunities</span>
+      <!-- <span class="badge-avail reveal"><span class="live"></span> Open to new opportunities</span> -->
       <h1 class="reveal">
-        <span class="line">Mohammad</span>
-        <span class="line gradient-text">Mahdi Alameh</span>
+        <span class="line">Mohammad Mahdi</span>
+        <span class="line gradient-text">Alameh</span>
       </h1>
       <div class="type-wrap reveal"><span id="typed"></span><span class="caret"></span></div>
       <p class="hero-desc reveal">
         Full Stack Web Developer crafting <strong style="color:var(--txt)">glitch-free</strong> enterprise
-        platforms. I architect scalable Angular front ends and wire them to rock-solid
-        Java / Spring Boot back ends.
+        platforms. I architect scalable Angular front ends and wire them to rock-solid Spring Boot back ends.
       </p>
       <div class="cta-row reveal">
         <a href="#projects" class="btn btn-primary">View my work →</a>
@@ -640,13 +644,10 @@
         <a href="https://github.com/Mohammad-Mahdi-Alameh" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.2.8-.5v-2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.7 18.3 5 18.3 5c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.6.8.5A11.5 11.5 0 0 0 23.5 12C23.5 5.7 18.3.5 12 .5z"/></svg>
         </a>
-        <a href="https://gitlab.com/" target="_blank" rel="noopener" aria-label="GitLab" title="GitLab">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21.4 15.3 11H8.7L12 21.4zM4.8 11l-1 3.1c-.1.3 0 .7.3.9L12 21.4 4.8 11zm14.4 0L12 21.4l7.9-6.4c.3-.2.4-.6.3-.9L19.2 11zM8.7 11 12 .6 8.7 11zM8.7 11H15.3L12 .6 8.7 11zm10.5 0h-4l1.7-5.3c.1-.3.5-.3.6 0L19.2 11zM4.8 11h4L7.1 5.7c-.1-.3-.5-.3-.6 0L4.8 11z"/></svg>
-        </a>
-        <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">
+        <a href="https://www.linkedin.com/in/Mohammad-Mahdi-Alameh" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 2h-17A1.5 1.5 0 0 0 2 3.5v17A1.5 1.5 0 0 0 3.5 22h17a1.5 1.5 0 0 0 1.5-1.5v-17A1.5 1.5 0 0 0 20.5 2zM8 19H5V9h3v10zM6.5 7.7a1.7 1.7 0 1 1 0-3.5 1.7 1.7 0 0 1 0 3.5zM19 19h-3v-5.3c0-1.3-.5-2.1-1.6-2.1-.9 0-1.4.6-1.6 1.2-.1.2-.1.5-.1.8V19h-3V9h3v1.3c.4-.6 1.1-1.5 2.7-1.5 2 0 3.4 1.3 3.4 4.1V19z"/></svg>
         </a>
-        <a href="mailto:your.email@example.com" aria-label="Email" title="Email">
+        <a href="mailto:mmwalameh@gmail.com" aria-label="Email" title="Email">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
         </a>
         <a href="tel:+96170738979" aria-label="Phone" title="Phone">
@@ -667,8 +668,7 @@
   <span class="s">based</span>: <span class="n">'Lebanon'</span>,
   <span class="s">stack</span>: [
     <span class="n">'Angular'</span>, <span class="n">'TypeScript'</span>,
-    <span class="n">'Java'</span>, <span class="n">'Spring Boot'</span>,
-    <span class="n">'RxJS'</span>, <span class="n">'Signals'</span>
+    <span class="n">'Spring Boot'</span>, <span class="n">'Java'</span>,
   ],
   <span class="s">focus</span>: <span class="n">'glitch-free code'</span>,
   <span class="c">// always shipping ✨</span>
@@ -686,28 +686,19 @@
     <div class="about-grid" style="margin-top:36px;">
       <div class="reveal">
         <p>
-          I'm a Full Stack Web Developer based in Bchamoun, Lebanon, with a
-          <strong>BSc in Computer Science</strong> from the Lebanese University.
-          I love turning complex business logic into clean, intuitive, and
-          maintainable experiences.
+          I'm a Full Stack Web Developer in Bchamoun, Lebanon, with a
+          <strong>Bachelor of Science in Computer Science</strong> from the Lebanese University. I turn
+          messy business logic into clean, intuitive, ship-ready experiences.
         </p>
         <p>
-          At <strong>CCC</strong> I architect and scale enterprise Angular platforms (up to v21)
-          for Talisman Procurement, Awards Expenditure and HRMS — using standalone
-          components and lazy loading to squeeze out every bit of performance. I lean on
-          <strong>advanced TypeScript OOP</strong>, design patterns, RxJS and Signals for
-          reactive state, and I secure apps with OAuth2 interceptors and role-based route guards.
-        </p>
-        <p>
-          I also translate intricate <strong>Eclipse Activiti</strong> workflows into automated
-          user processes and integrate Angular UIs seamlessly with Java 21, Spring Boot and
-          JHipster REST APIs backed by PostgreSQL — all while accelerating delivery with
-          AI coding agents.
+          I live on both sides of the stack — scalable <strong>Angular</strong> front ends wired to
+          solid <strong>Spring Boot</strong> back ends — obsessed with
+          <strong>glitch-free</strong>, maintainable code and shipping fast with AI in the loop.
         </p>
       </div>
       <div class="fact-list reveal">
         <div class="fact"><span class="ico">📍</span><div><div class="k">Location</div><div class="v">Bchamoun, Lebanon</div></div></div>
-        <div class="fact"><span class="ico">🎓</span><div><div class="k">Education</div><div class="v">BSc Computer Science</div></div></div>
+        <div class="fact"><span class="ico">🎓</span><div><div class="k">Education</div><div class="v">Bachelor of Science in Computer Science</div></div></div>
         <div class="fact"><span class="ico">💼</span><div><div class="k">Currently</div><div class="v">Full Stack Dev @ CCC</div></div></div>
         <div class="fact"><span class="ico">🌐</span><div><div class="k">Languages</div><div class="v">Arabic · English</div></div></div>
       </div>
@@ -719,9 +710,9 @@
 <section style="padding-top:0;">
   <div class="wrap">
     <div class="stats">
-      <div class="stat reveal"><div class="num gradient-text" data-count="3">0</div><div class="lbl">Years of experience</div></div>
+      <div class="stat reveal"><div class="num gradient-text" data-count="4">0</div><div class="lbl">Years of experience</div></div>
       <div class="stat reveal"><div class="num gradient-text" data-count="21">0</div><div class="lbl">Angular versions shipped to</div></div>
-      <div class="stat reveal"><div class="num gradient-text" data-count="8">0</div><div class="lbl">Languages I code in</div></div>
+      <div class="stat reveal"><div class="num gradient-text" data-count="7">0</div><div class="lbl">Languages I code in</div></div>
       <div class="stat reveal"><div class="num gradient-text" data-count="3" data-suffix="+">0</div><div class="lbl">Enterprise platforms</div></div>
     </div>
   </div>
@@ -738,18 +729,17 @@
       <div class="skill-card reveal">
         <h3><span class="emoji">🎨</span> Frontend</h3>
         <div class="chips">
-          <span class="chip">Angular</span><span class="chip">TypeScript</span><span class="chip">RxJS</span>
-          <span class="chip">Signals</span><span class="chip">React</span><span class="chip">jQuery</span>
-          <span class="chip">PrimeNG</span><span class="chip">PrimeFlex</span><span class="chip">Bootstrap 5</span>
-          <span class="chip">Kendo UI</span><span class="chip">MUI</span><span class="chip">Ionic</span>
+          <span class="chip">Angular</span><span class="chip">PrimeNG</span><span class="chip">PrimeFlex</span>
+          <span class="chip">jQuery</span><span class="chip">React</span><span class="chip">Bootstrap 5</span>
+          <span class="chip">Kendo UI</span><span class="chip">MUI</span><span class="chip">Android SDK</span>
         </div>
       </div>
       <div class="skill-card reveal">
         <h3><span class="emoji">⚙️</span> Backend</h3>
         <div class="chips">
-          <span class="chip">Java 21</span><span class="chip">Spring Boot</span><span class="chip">JHipster</span>
-          <span class="chip">ASP.NET Core</span><span class="chip">Node.js</span><span class="chip">Laravel</span>
-          <span class="chip">Activiti</span><span class="chip">REST APIs</span>
+          <span class="chip">Spring Boot</span><span class="chip">JHipster</span><span class="chip">Activiti Workflow</span>
+          <span class="chip">Laravel</span>
+          <span class="chip">ASP.NET Core</span>
         </div>
       </div>
       <div class="skill-card reveal">
@@ -763,21 +753,20 @@
         <div class="chips">
           <span class="chip">Java</span><span class="chip">TypeScript</span><span class="chip">JavaScript</span>
           <span class="chip">Python</span><span class="chip">C#</span><span class="chip">PHP</span>
-          <span class="chip">Kotlin</span><span class="chip">C</span>
-        </div>
-      </div>
-      <div class="skill-card reveal">
-        <h3><span class="emoji">🔐</span> Security & Auth</h3>
-        <div class="chips">
-          <span class="chip">OAuth2</span><span class="chip">Keycloak</span><span class="chip">HTTP Interceptors</span>
-          <span class="chip">Route Guards</span><span class="chip">RBAC</span>
+          <span class="chip">Kotlin</span>
         </div>
       </div>
       <div class="skill-card reveal">
         <h3><span class="emoji">🛠️</span> Tools & DevOps</h3>
         <div class="chips">
           <span class="chip">GitLab</span><span class="chip">GitHub</span><span class="chip">Jira</span>
-          <span class="chip">Postman</span><span class="chip">Figma</span><span class="chip">AI Agents</span>
+          <span class="chip">Postman</span><span class="chip">Figma</span><span class="chip">Github Copilot</span><span class="chip">Claude Code</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <h3><span class="emoji">🔐</span> Security & Auth</h3>
+        <div class="chips">
+          <span class="chip">OAuth2</span><span class="chip">Keycloak</span>
         </div>
       </div>
     </div>
@@ -797,11 +786,13 @@
           <h3>Full Stack Web Developer</h3>
           <div class="where">CCC · Beirut, Lebanon</div>
           <ul>
-            <li>Architected and scaled enterprise Angular platforms (up to v21) for Talisman Procurement, Awards Expenditure and HRMS with standalone components and lazy loading.</li>
-            <li>Engineered resilient UI architectures with advanced TypeScript OOP, design patterns, RxJS and Signals for reactive state management.</li>
-            <li>Secured apps with OAuth2 HTTP interceptors, role-based route guards and app-wide error handling.</li>
-            <li>Integrated Angular UIs with Java 21, Spring Boot 3.4.5 and JHipster REST APIs backed by PostgreSQL.</li>
-            <li>Translated Eclipse Activiti workflows into intuitive, automated user processes; accelerated delivery with AI coding agents.</li>
+            <li>Designed and maintained backend systems with Java 21, Spring Boot 3.4.5 and JHipster 8.11.0, backed by PostgreSQL for reliable, scalable enterprise applications.</li>
+            <li>Developed scalable Angular 21 platforms — Talisman Procurement, Awards Expenditure and HRMS — delivering new features and end-to-end enhancements.</li>
+            <li>Used AI coding agents (GitHub Copilot, Claude Opus &amp; Fable) hands-on to accelerate development, troubleshoot issues, refactor code and improve efficiency.</li>
+            <li>Engineered complex business workflows with Activiti Workflow Engine in Eclipse, translating requirements into maintainable automated processes.</li>
+            <li>Applied OOP, design patterns and efficient data-access practices to build maintainable, performant and scalable solutions.</li>
+            <li>Implemented security, error handling and routing; troubleshot production issues to ensure reliable system operation.</li>
+            <li>Managed source code with GitLab and worked in Agile teams via Jira — sprint planning, code reviews, releases and problem-solving.</li>
           </ul>
         </div>
       </div>
@@ -814,7 +805,7 @@
           <ul>
             <li>Designed and maintained the "DMS" web application on a .NET Core backend with a MySQL database.</li>
             <li>Built a responsive, feature-rich frontend with HTML, CSS/Bootstrap and JavaScript/jQuery.</li>
-            <li>Leveraged Telerik UI for ASP.NET and Kendo UI for jQuery for advanced grids, forms and interactive UI.</li>
+            <li>Leveraged Telerik UI for ASP.NET Core and Kendo UI for jQuery for advanced grids, forms and interactive UI.</li>
             <li>Worked in a Scrum/Agile environment, managing tasks independently via Jira.</li>
           </ul>
         </div>
@@ -848,54 +839,31 @@
 <!-- PROJECTS -->
 <section id="projects">
   <div class="wrap">
-    <span class="eyebrow reveal">04 — Work</span>
-    <h2 class="title reveal">Selected <span class="gradient-text">projects</span></h2>
+    <span class="eyebrow reveal">04 — Builds</span>
+    <h2 class="title reveal">Featured <span class="gradient-text">Projects</span></h2>
     <p class="section-lead reveal">A few things I've built end-to-end, from mobile apps to modern Angular front ends.</p>
 
     <div class="proj-grid">
-      <a class="proj reveal" href="#projects">
+      <a class="proj reveal" href="https://github.com/Mohammad-Mahdi-Alameh/sales-portal" target="_blank" rel="noopener">
         <div class="pt">
           <span class="picon">🛒</span>
-          <span class="plink">↗</span>
         </div>
         <h3>Sales Portal</h3>
-        <div class="ptag">Frontend · Angular 22</div>
+        <div class="ptag">Frontend Dashboard Built In Angular 22</div>
         <p>A sales portal built in modern Angular (Signals, standalone components) against a dummy REST API. Ships an auth shell, dashboard, four CRUD areas (organizations, branches, venues, clients) and a two-path multi-step setup wizard — all with real loading / empty / error / optimistic / confirm states.</p>
-        <div class="stack"><span>Angular 22</span><span>Signals</span><span>Standalone</span><span>TypeScript</span></div>
+        <div class="stack"><span>Angular 22</span></div>
       </a>
 
-      <a class="proj reveal" href="#projects">
+      <a class="proj reveal" href="https://github.com/Mohammad-Mahdi-Alameh/SE-FINAL-PROJECTS" target="_blank" rel="noopener">
         <div class="pt">
           <span class="picon">📍</span>
-          <span class="plink">↗</span>
         </div>
         <h3>Peekaboo</h3>
-        <div class="ptag">SE Factory · Graduation Project</div>
+        <div class="ptag">SE Factory Graduation Project</div>
         <p>A mobile app that tracks the user's live location and notifies them of road infrastructure problems, with a built-in reporting mechanism. Backend in Laravel v8, user app in Kotlin, and an admin dashboard in React.</p>
-        <div class="stack"><span>Laravel</span><span>Kotlin</span><span>React</span><span>Maps</span></div>
+        <div class="stack"><span>Laravel</span><span>Kotlin</span><span>React</span><span>Google Maps</span></div>
       </a>
 
-      <a class="proj reveal" href="#experience">
-        <div class="pt">
-          <span class="picon">🏗️</span>
-          <span class="plink">↗</span>
-        </div>
-        <h3>Talisman Platform</h3>
-        <div class="ptag">Enterprise · CCC</div>
-        <p>Large-scale Angular 21 + PrimeNG procurement platform with Keycloak auth, workflow-driven processes (Activiti), role-based security and multi-tenant data sources — integrated with Java / Spring Boot services.</p>
-        <div class="stack"><span>Angular 21</span><span>PrimeNG</span><span>Keycloak</span><span>Spring Boot</span></div>
-      </a>
-
-      <a class="proj reveal" href="#experience">
-        <div class="pt">
-          <span class="picon">📄</span>
-          <span class="plink">↗</span>
-        </div>
-        <h3>DMS</h3>
-        <div class="ptag">Document Management · .NET Core</div>
-        <p>A document management web application with a .NET Core backend and MySQL database. Responsive frontend using Bootstrap and jQuery, enhanced with Telerik and Kendo UI grids and forms.</p>
-        <div class="stack"><span>.NET Core</span><span>MySQL</span><span>Kendo UI</span><span>jQuery</span></div>
-      </a>
     </div>
   </div>
 </section>
@@ -907,9 +875,9 @@
       <h2>Let's build something <span class="gradient-text">great</span>.</h2>
       <p>I'm open to new opportunities and interesting problems. If you want glitch-free code and a developer who ships, let's talk.</p>
       <div class="contact-methods">
-        <a href="mailto:your.email@example.com" class="btn btn-primary">✉️ Email me</a>
+        <a href="mailto:mmwalameh@gmail.com" class="btn btn-primary">✉️ Email me</a>
         <a href="tel:+96170738979" class="btn btn-ghost">📞 +961 70 738979</a>
-        <a href="https://www.linkedin.com/" target="_blank" rel="noopener" class="btn btn-ghost">💼 LinkedIn</a>
+        <a href="https://www.linkedin.com/in/Mohammad-Mahdi-Alameh" target="_blank" rel="noopener" class="btn btn-ghost">💼 LinkedIn</a>
       </div>
     </div>
   </div>
@@ -962,9 +930,8 @@
 
   // ---- Typing effect ----
   const phrases = [
-    'Angular · TypeScript · Signals',
-    'Java 21 · Spring Boot · JHipster',
-    'OAuth2 · Keycloak · RBAC',
+    'Angular · TypeScript',
+    'Spring Boot · Java',
     'I ship glitch-free code.'
   ];
   const typed = document.getElementById('typed');
